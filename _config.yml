@@ -17,7 +17,7 @@ keep_files:
 title: "Inner Space Divers"
 subtitle: "The home of BSAC 1876"
 url: "https://www.innerspacedivers.com" # the base hostname & protocol for your site
-baseurl: "/app"
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
