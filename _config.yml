@@ -1,12 +1,36 @@
-title: Inner Space Divers
-email: info@innerspacedivers.com
-description: >-
-  Welcome to the home of BSAC 1876
-baseurl: "/"
-url: "https://www.innerspacedivers.com"
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+
+# Site settings
+title: "Inner Space Divers"
+subtitle: "The home of BSAC 1876"
+url: "https://www.innerspacedivers.com" # the base hostname & protocol for your site
+baseurl: "/app"
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
+
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
+
+  - cat: dummy
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
