@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact us!
+title: Contact Us
 permalink: /contact/
 ---
 
@@ -24,29 +24,23 @@ permalink: /contact/
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form>
+          <form action="http://localhost:5000/api/message" method="POST">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input name="name" type="text" class="form-control" placeholder="Your Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email Address">
+              <input name="email" type="text" class="form-control" placeholder="Email Address">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
+              <input name="subject" type="text" class="form-control" placeholder="Subject">
             </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
             <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+              <textarea name="message" class="form-control" rows="3" placeholder="Your Message"></textarea>
             </div>
             <button class="btn btn-default" type="submit">Send Message</button>
-          </form>
         </div>
       </div>
+
     </div>
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
@@ -57,7 +51,7 @@ permalink: /contact/
               <i class="fa fa-map-marker"></i>Whitchurch, Shropshire.
             </li>
             <li>
-              <i class="fa fa-envelope-o"></i>Email: info@innerspacedivers.com
+              <i class="fa fa-envelope-o"></i><a href="mailto:info@innerspacedivers.com?Subject=Web%20Enquiry" target="_top">info@innerspacedivers.com</a>
             </li>
             <li>
               <i class="fa fa-phone"></i>Phone:+44 1934 567890

@@ -5,8 +5,8 @@
   icon: ion-ios-chatboxes-outline
   text: Current members
 - counter: 503
-  icon: ion-ios-compose-outline
+  icon: ion-ios-chatboxes-outline
   text: Member over the years
 - counter: 50
-  icon: ion-ios-timer-outline
+  icon: ion-ios-chatboxes-outline
   text: Dive Leaders Qualified
