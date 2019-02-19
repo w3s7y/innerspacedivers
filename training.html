@@ -11,7 +11,7 @@ permalink: /training/
             <div class="col-md-12">
                 <div class="block">
                     <h1>We offer all BSAC diver grades up to Advanced Diver</h1>
-                    <p>We can also broaden your training with Skill Development Courses such as the ones below</p>
+                    <p>We can also broaden your experience with many Skill Development Courses such as the ones below</p>
                 </div>
             </div>
         </div>
@@ -26,58 +26,26 @@ permalink: /training/
               <div class="portfolio-menu">
                 <ul>
                     <li class="filter" data-filter="all">Everything</li>
-                    <li class="filter" data-filter=".Safety">Safety</li>
-                    <li class="filter" data-filter=".Boat">Boat Handling</li>
-                    <li class="filter" data-filter=".Diver">Diver</li>
+                    {% for grp in site.data.sdcs.groups %}
+                    <li class="filter" data-filter=".{{ grp }}">{{ grp }}</li>
+                    {% endfor %}
                 </ul>
               </div>
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
-                    <li class="mix Boat">
+                   {% for sdc in site.data.sdcs.sdcs %}
+                     <li class="mix {{ sdc.group }}">
                       <a href="#">
-                        <img src="{{ site.baseurl }}/img/portfolio/rhib2.jpg" alt="inflatable boat">
+                        <img src="{{ site.baseurl }}{{ sdc.image_src }}" alt="{{ sdc.image_alt }}">
                         <div class="overly">
                           <div class="position-center">
-                            <h2>Boat Handling</h2>
-                            <p>Learn how to use ridged hulled inflatables as diving platforms and safe seamanship.</p>
-
+                            <h2>{{ sdc.name }}</h2>
+                            <p>{{ sdc.detail }}</p>
                           </div>
                         </div>
                       </a>
-                  </li>
-                  <li class="mix Boat">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/chartwork4.jpg" alt="sea chart">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Chartwork and Position Fixing</h2>
-                          <p>Learn how to navigate using sea charts</p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Safety">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/oxygen2.jpg" alt="Oxygen bottle">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>O2 Administration</h2>
-                          <p>Allows you to administer oxygen in diving related incidents.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Diver">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/Drysuit1.jpg" alt="Drysuit">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Drysuit Diving</h2>
-                          <p>Become an expert in drysuit diving.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+                    </li>
+                   {% endfor %}
                 </ul>
               </div>
             </div>

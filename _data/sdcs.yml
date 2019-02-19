@@ -1,0 +1,36 @@
+groups:
+  - Boat
+  - Safety
+  - Diver
+  - Misc
+
+# Main SDCs block
+sdcs:
+  # Boaty sdcs
+  - name: Boat Handling
+    detail: Learn how to use ridged hulled inflatables as diving platforms and safe seamanship.
+    image_src: /img/portfolio/rhib2.jpg
+    image_alt: Boat Handling
+    group: Boat
+  - name: Chartwork and Position Fixing
+    detail: Learn how to navigate using sea charts
+    image_src: /img/portfolio/rhib2.jpg
+    image_alt: Sea Charts
+    group: Boat
+
+  # Diver sdcs
+  - name: Drysuit Diver
+    detail: A great course for anyone unfamiliar with the additional considerations of diving in a drysuit.
+    image_src: /img/portfolio/Drysuit1.jpg
+    image_alt: Drysuit
+    group: Diver
+
+
+  # Safety sdcs
+  - name: Oxygen Administration
+    detail: A crucial skill in scuba diving, ensure you know all there is to know about giving medical oxygen in diving incidents.
+    image_src: /img/portfolio/oxygen2.jpg
+    image_alt: Oxygen Cylinder
+    group: Safety
+
+  # Misc sdcs
