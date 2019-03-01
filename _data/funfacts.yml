@@ -1,12 +1,20 @@
-- counter: 1976
-  icon: ion-ios-chatboxes-outline
-  text: Established
-- counter: 15
-  icon: ion-ios-chatboxes-outline
-  text: Current members
-- counter: 503
-  icon: ion-ios-chatboxes-outline
-  text: Member over the years
-- counter: 50
-  icon: ion-ios-chatboxes-outline
-  text: Dive Leaders Qualified
+facts_detail: Here are some fun facts about the club!
+facts:
+  - counter: 1976
+    icon: ion-ios-chatboxes-outline
+    text: Affiliated into BSAC 1876
+  - counter: 8
+    icon: ion-ios-chatboxes-outline
+    text: Current members
+  - counter: 503
+    icon: ion-ios-chatboxes-outline
+    text: Members over the years
+  - counter: 50
+    icon: ion-ios-chatboxes-outline
+    text: Dive Leaders Qualified
+  - counter: 312
+    icon: ion-ios-chatboxes-outline
+    text: Dives last year
+  - counter: 2
+    icon: ion-ios-chatboxes-outline
+    text: BSAC Instructors

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Inner Space Divers
+title: BSAC 1876
 permalink: /
 ---
 
@@ -10,8 +10,8 @@ permalink: /
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">We are BSAC Dive Club (1876).</h1>
-          <p class="animated fadeInUp">We dive year round on the north wales coastline, our training pool is in St Martens, near Oswestry.</p>
+          <h1 class="animated fadeInUp">Welcome to {{ site.data.content.index.title }}</h1>
+          <p class="animated fadeInUp">{{ site.data.content.index.info }}</p>
         </div>
       </div>
     </div>
@@ -27,13 +27,13 @@ permalink: /
           <div class="section-title">
             <h2>About Us</h2>
           </div>
-          <p>{{ site.data.content.about_us }}</p>
-          <a href="/events">View Our Events</a>
+          <p>{{ site.data.content.index.about_us }}</p>
+          <a href="/events">View Our News and Events</a>
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
         <div class="block">
-          <img src="img/menai-view.jpg" alt="Menai Strait">
+          <img src="/img/portfolio/fish_with_diver.jpg" alt="Moorish Idols With Diver">
         </div>
       </div><!-- .col-md-5 close -->
     </div>
@@ -57,14 +57,14 @@ permalink: /
     <div class="row">
       <div class="section-title text-center">
         <h2>Fun Facts About Us</h2>
-        <p>Origna</p>
+        <p>{{ site.data.funfacts.facts_detail }}</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        {% if site.data.funfacts.size > 0 %}
+        {% if site.data.funfacts.facts.size > 0 %}
         <div class="block">
-          {% for ff in site.data.funfacts %}
+          {% for ff in site.data.funfacts.facts %}
           <ul class="counter-box clearfix">
             <li>
               <div class="block">

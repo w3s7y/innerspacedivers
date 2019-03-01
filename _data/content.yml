@@ -1,9 +1,15 @@
 # This is mostly wordy content from the index.html page.
-about_us: |
-  We can trace our roots back to the late 1970's when we were affliated with SAA we have a hugely diverse
-  and exciting array of places we have dived and are still planning!
+index:
+  title: Inner Space Divers
+  info: We dive year round on the north wales coastline, our training pool is in St Martens, near Oswestry.
+  about_us: |
+    We can trace our roots back to the late 1970's when we were affliated with SAA we have a hugely diverse
+    and exciting array of places we have dived and are still planning!
 training_content: |
   With one Advanced Instructor and one Open Water Instructor, we can train people up to and including the BSAC
   Advanced Diver level.  Our instructors have taught hundereds of aspiring divers over the years and can't wait
-  to teach you too!
-
+  to show you the underwater world too!
+contact_content:
+  - We generally have pool sessions once a month at St Martens (in water for 20:00).
+  - If you would like to get in touch please use the details or form below.
+  - Please note if you want to book a try dive, please phone using the number below as it is the fastest way to get hold of us!

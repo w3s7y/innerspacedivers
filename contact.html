@@ -11,8 +11,9 @@ permalink: /contact/
       <div class="col-md-12">
         <div class="block">
           <h1>Drop Us A Note</h1>
-            <p>We generally have pool sessions once every other week at St Martens (in water for 20:00).</p>
-          <p>If you would like to get in touch, either drop in one evening or get in touch using the details below.</p>
+            {% for line in site.data.content.contact_content %}
+              <p>{{ line }}</p>
+            {% endfor %}
         </div>
       </div>
     </div>
@@ -49,28 +50,13 @@ permalink: /contact/
           <h2>Contact Information</h2>
           <ul class="address-block">
             <li>
-              <i class="fa fa-map-marker"></i>Whitchurch, Shropshire.
+              <i class="fa fa-map-marker"></i>85 Thompson Drive, Whitchurch, Shropshire, SY13 1JJ, United Kingdom
             </li>
             <li>
               <i class="fa fa-envelope-o"></i><a href="mailto:info@innerspacedivers.com" target="_top">info@innerspacedivers.com</a>
             </li>
             <li>
               <i class="fa fa-phone"></i>Phone:+44 (0)1934 567890
-            </li>
-          </ul>
-
-          <ul class="social-icons">
-            <li>
-              <a href="https://linkedin.com/ben-west"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/w3s7y/innerspacedivers"><i class="fa fa-github"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/innerspacedivers"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/innerspacedivers"><i class="fa fa-facebook"></i></a>
             </li>
           </ul>
         </div>

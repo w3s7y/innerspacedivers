@@ -17,6 +17,11 @@ sdcs:
     image_src: /img/portfolio/rhib2.jpg
     image_alt: Sea Charts
     group: Boat
+  - name: Diver Coxswain
+    detail: Attain the highest level of boat handling profiency BSAC offer!
+    image_src: /img/portfolio/diver_coxn.jpg
+    image_alt: Man driving boat
+    group: Boat
 
   # Diver sdcs
   - name: Drysuit Diver
