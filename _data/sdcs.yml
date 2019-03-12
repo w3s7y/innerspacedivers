@@ -37,5 +37,13 @@ sdcs:
     image_src: /img/portfolio/oxygen2.jpg
     image_alt: Oxygen Cylinder
     group: Safety
+  - name: Practical Rescue Management
+    detail: 
+    image_src:
+    image_alt:
+    group: Safety
 
   # Misc sdcs
+  - name: Beachcomber course
+    detail: Marine animal identification in rockpools and intertidal areas.
+    image_src: /img/portfolio/sdc/beachcomber.jpg
