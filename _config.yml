@@ -21,6 +21,8 @@ baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
+message_api: "https://www.innerspacedivers.com/api/message"
+
 # Build settings
 markdown: kramdown
 

@@ -3,7 +3,46 @@ layout: page
 title: Contact Us
 permalink: /contact/
 ---
+<script>
+function validateForm() {
+  var name = document.forms["contact"]["name"].value;
+  var email = document.forms["contact"]["email"].value;
+  var subject = document.forms["contact"]["subject"].value;
+  var message = document.forms["contact"]["message"].value;
 
+  if (name == "") {
+    document.getElementById('name_val').innerHTML = 'Name must be completed';
+    return false;
+  }
+
+  if (email == "") {
+    document.getElementById('email_val').innerHTML = 'Email must be completed';
+    return false;
+  }
+
+  if (subject == "") {
+    document.getElementById('subject_val').innerHTML = 'Subject must be completed';
+    return false;
+  }
+
+  if (message == "") {
+    document.getElementById('message_val').innerHTML = 'Message must be completed';
+    return false;
+  }
+
+  return true;
+}
+
+function updateAction() {
+  result = window.location.search.substr(1).split('=')[1];
+  if (result == "true") {
+    document.getElementById('action').innerHTML = 'Thank you for your message, one of our club officers will be in touch shortly.';
+  } else if (result == "false") {
+    document.getElementById('action').innerHTML = 'Sorry, but there appears to be a problem sending your message.  Please use out email address or telephone below.';
+  }
+}
+
+</script>
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
@@ -24,25 +63,27 @@ permalink: /contact/
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <!-- TODO: Message user about from submission status -->
-          <form action="https://www.innerspacedivers.com/api/message" method="POST">
+        <div class="block" id="action">
+          <form name="contact" action="{{ site.message_api }}" method="POST" onsubmit="return validateForm();">
             <div class="form-group">
               <input name="name" type="text" class="form-control" placeholder="Your Name">
+              <div id="name_val" class="form-group"></div>
             </div>
             <div class="form-group">
               <input name="email" type="text" class="form-control" placeholder="Email Address">
+              <div id="email_val" class="form-group"></div>
             </div>
             <div class="form-group">
               <input name="subject" type="text" class="form-control" placeholder="Subject">
+              <div id="subject_val" class="form-group"></div>
             </div>
             <div class="form-group-2">
               <textarea name="message" class="form-control" rows="3" placeholder="Your Message"></textarea>
+              <div id="message_val" class="form-group"></div>
             </div>
             <button class="btn btn-default" type="submit">Send Message</button>
         </div>
       </div>
-
     </div>
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
@@ -64,3 +105,4 @@ permalink: /contact/
     </div>
   </div>
 </section>
+<script>updateAction();</script>
